@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "lemonbrickautorestart",
+  "version": "${version}",
+
+  "name": "LemonBrickAutorestart",
+  "description": "Mod for autorestart",
+  "authors": [
+    "KAPAMEJlbKA"
+  ],
+  "contact": {
+    "website": "https://lemonbrick.by/",
+    "repo": "https://github.com/KAPAMEJlbKA/LemonBrickAutorestart"
+  },
+
+  "license": "GPL-3.0",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.lemonbrik.lemonbrickautorestart.LemonBrickAutoRestart"
+    ]
+  },
+
+      "mixins": [
+        "lemonbrickautorestart.mixins.json"
+      ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+        "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
